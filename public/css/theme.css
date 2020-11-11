@@ -1,0 +1,63 @@
+html {
+  line-height: 1.2;
+}
+
+body {
+  background: #F6F6F6;
+}
+
+.crud-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.icon {
+  display: block;
+}
+.icon.burger {
+  width: 25px;
+  height: 19px;
+  background: url(../i/icons/burger.svg) center/contain no-repeat;
+}
+.icon.profile {
+  width: 28px;
+  height: 28px;
+  -webkit-mask: url(../i/icons/profile.svg) center/contain no-repeat;
+          mask: url(../i/icons/profile.svg) center/contain no-repeat;
+  background: #6B9EFF;
+}
+.icon.search {
+  width: 17px;
+  height: 17px;
+  -webkit-mask: url(../i/icons/search.svg) center/contain no-repeat;
+          mask: url(../i/icons/search.svg) center/contain no-repeat;
+  background: #fff;
+}
+.icon.plus {
+  width: 12px;
+  height: 12px;
+  -webkit-mask: url(../i/icons/plus.svg) center/contain no-repeat;
+          mask: url(../i/icons/plus.svg) center/contain no-repeat;
+  background: #fff;
+}
+.icon.edit {
+  width: 18px;
+  height: 18px;
+  -webkit-mask: url(../i/icons/edit.svg) center/contain no-repeat;
+          mask: url(../i/icons/edit.svg) center/contain no-repeat;
+  background: #fff;
+}
+.icon.delete {
+  width: 18px;
+  height: 21.6px;
+  -webkit-mask: url(../i/icons/delete.svg) center/contain no-repeat;
+          mask: url(../i/icons/delete.svg) center/contain no-repeat;
+  background: #fff;
+}
+.icon.check {
+  width: 19px;
+  height: 14.25px;
+  -webkit-mask: url(../i/icons/check.svg) center/contain no-repeat;
+          mask: url(../i/icons/check.svg) center/contain no-repeat;
+  background: #fff;
+}
