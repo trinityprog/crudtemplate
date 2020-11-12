@@ -1,15 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3ddf8e4-1367-409f-9eb3-70f0ccfb45b1" name="Default Changelist" comment="" />
+    <list default="true" id="a3ddf8e4-1367-409f-9eb3-70f0ccfb45b1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/tailwind.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/InputFormGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/TextareaFormGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Textarea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Test.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Vue Single File Component" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -130,17 +182,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/Crud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/Pages" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\crudtemplate\resources\js\Crud" />
-      <recent name="C:\wamp64\www\crudtemplate\public\i\icons" />
       <recent name="C:\wamp64\www\crudtemplate\resources\js\Pages" />
+      <recent name="C:\wamp64\www\crudtemplate\resources\js\Crud" />
+      <recent name="C:\wamp64\www\crudtemplate" />
+      <recent name="C:\wamp64\www\crudtemplate\public\i\icons" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.watch">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -169,41 +223,71 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605079731396</updated>
-      <workItem from="1605079732441" duration="15079000" />
+      <workItem from="1605079732441" duration="16230000" />
+      <workItem from="1605157227540" duration="5064000" />
+      <workItem from="1605164134435" duration="6445000" />
+      <workItem from="1605179124781" duration="5099000" />
     </task>
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="C:\Program Files\Git\bin\sh.exe" />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1867" height="264" key="GridCell.Tab.0.bottom" timestamp="1605096851756">
+    <state x="624" y="217" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605159536270">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="264" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605096851756" />
-    <state width="1867" height="264" key="GridCell.Tab.0.center" timestamp="1605096851756">
+    <state x="624" y="217" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605159536270" />
+    <state x="677" y="201" key="FileChooserDialogImpl" timestamp="1605165258248">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="264" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605096851756" />
-    <state width="1867" height="264" key="GridCell.Tab.0.left" timestamp="1605096851756">
+    <state x="677" y="201" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605165258248" />
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom" timestamp="1605172366958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="264" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605096851756" />
-    <state width="1867" height="264" key="GridCell.Tab.0.right" timestamp="1605096851756">
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center" timestamp="1605172366958">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="264" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605096851756" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
+    <state width="1867" height="185" key="GridCell.Tab.0.left" timestamp="1605172366958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right" timestamp="1605172366958">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
+    <state x="381" y="78" key="SettingsEditor" timestamp="1605165259764">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="381" y="78" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605165259764" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605089079934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605089079934" />
-    <state x="581" y="195" width="757" height="722" key="find.popup" timestamp="1605080160143">
+    <state x="581" y="195" width="906" height="822" key="find.popup" timestamp="1605170307413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="581" y="195" width="757" height="722" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605080160143" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1605087259563">
+    <state x="581" y="195" width="906" height="822" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605170307413" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1605169689823">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605087259563" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605169689823" />
   </component>
 </project>

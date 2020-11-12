@@ -1,15 +1,15 @@
 <template>
     <div>
-        <navbar/>
+        <crud-navbar/>
     </div>
 </template>
 
 <script>
-    import Navbar from '@/Crud/Navbar'
+    import CrudNavbar from '@/Crud/Navbar'
 
     export default {
         components: {
-            Navbar
+            CrudNavbar
         },
     }
 </script>

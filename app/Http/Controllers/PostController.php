@@ -10,16 +10,25 @@ use Illuminate\Support\Facades\Validator;
 class PostController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $data = Post::all();
+        $query = Post::query();
+
+        $search = $request->input('search');
+        if(!empty($search)) {
+            $query->where('title', 'LIKE', "%$search%");
+            $query->orWhere('body', 'LIKE', "%$search%");
+        }
+//        dd($query->toSql());
+        $data= $query->latest()->get();
+
         return Inertia::render('Post', ['data' => $data]);
     }
 
 
     public function create()
     {
-        return Inertia::render('PostCreate',);
+        return Inertia::render('PostCreate');
     }
 
     public function store(Request $request)
@@ -31,7 +40,7 @@ class PostController extends Controller
 
         Post::create($request->all());
 
-        return redirect()->back()
+        return redirect('/posts/')
             ->with('message', 'Post Created Successfully.');
     }
 
@@ -44,7 +53,6 @@ class PostController extends Controller
 
     public function update(Request $request)
     {
-        dd($request->all());
         Validator::make($request->all(), [
             'title' => ['required'],
             'body' => ['required'],
@@ -54,7 +62,7 @@ class PostController extends Controller
             $post = Post::find($request->input('id'))->update($request->all());
 //            return redirect()->back()
 //                ->with('message', 'Post Updated Successfully.');
-            return redirect('/posts');
+            return redirect('/posts')->with('message', 'Запись успешно изменена.');
         }
     }
 
@@ -63,7 +71,7 @@ class PostController extends Controller
     {
         if ($request->has('id')) {
             Post::find($request->input('id'))->delete();
-            return redirect()->back();
+            return redirect()->back()->with('message', 'Запись успешно удалена.');
         }
     }
 }

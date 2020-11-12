@@ -13,19 +13,19 @@
                     </div>
                 </div>
                 <div class="left-side flex items-center justify-end">
-                    <table-button-edit v-if="can_edit" :href="'/posts/' + row.id + '/edit'"/>
-                    <table-button-delete v-if="can_delete" @click.native="deleteModalOpen($event)"/>
+                    <crud-table-button-edit v-if="can_edit" :href="'/posts/' + row.id + '/edit'"/>
+                    <crud-table-button-delete v-if="can_delete" @click.native="deleteModalOpen($event)"/>
                 </div>
             </div>
-            <modal-delete v-show="deleteOpen" :style="{ top : top_position + 'px'}" :modal_name="modal_name" :id="item_id"/>
+            <crud-modal-delete v-show="deleteOpen" :style="{ top : top_position + 'px'}" :modal_name="modal_name" :id="item_id"/>
             <div class="overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25" v-if="deleteOpen" @click="deleteModalClose()"></div>
         </div>
 </template>
 
 <script>
-import TableButtonEdit from '@/Crud/TableButtonEdit'
-import TableButtonDelete from '@/Crud/TableButtonDelete'
-import ModalDelete from '@/Crud/ModalDelete'
+import CrudTableButtonEdit from '@/Crud/TableButtonEdit'
+import CrudTableButtonDelete from '@/Crud/TableButtonDelete'
+import CrudModalDelete from '@/Crud/ModalDelete'
 export default {
     props : {
         'data' : Array,
@@ -47,6 +47,7 @@ export default {
             let rect = row.getBoundingClientRect();
             this.deleteOpen = true;
             this.top_position = rect.height + rect.top;
+            console.log(this.top_position)
             this.item_id = row.dataset.itemId;
         },
         deleteModalClose() {
@@ -59,9 +60,9 @@ export default {
         }
     },
     components: {
-        TableButtonEdit,
-        TableButtonDelete,
-        ModalDelete
+        CrudTableButtonEdit,
+        CrudTableButtonDelete,
+        CrudModalDelete
     },
     mounted() {
         document.addEventListener("keydown", e => {

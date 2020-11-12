@@ -1,16 +1,16 @@
 <template>
-    <div class="modal-delete rounded absolute bg-white p-12 z-10">
+    <div class="modal-delete rounded fixed bg-white p-12 z-10">
         <div class="mb-4" >Удалить {{ modal_name }} <span class="text-blue-500">#{{ id }}</span> ?</div>
         <div class="flex justify-between">
-            <button-cancel class="bg-gray-100" @click="deleteModalClose()" ></button-cancel>
-            <button-delete @click="deleteItem()" ></button-delete>
+            <crud-button-cancel class="bg-gray-100" @click.native="deleteModalClose()" ></crud-button-cancel>
+            <crud-button-delete @click.native="deleteItem()" ></crud-button-delete>
         </div>
     </div>
 </template>
 
 <script>
-import ButtonCancel from '@/Crud/ButtonCancel'
-import ButtonDelete from '@/Crud/ButtonDelete'
+import CrudButtonCancel from '@/Crud/ButtonCancel'
+import CrudButtonDelete from '@/Crud/ButtonDelete'
 
 export default {
     props : [
@@ -26,9 +26,9 @@ export default {
         }
     },
     components: {
-        ButtonCancel,
-        ButtonDelete
-    },
+        CrudButtonCancel,
+        CrudButtonDelete
+    }
 }
 </script>
 <style scoped>

@@ -2,7 +2,7 @@
     <div>
         <crud-navbar/>
         <div class="crud-container">
-            <crud-model-title>Редактирование FAQ <span class="text-blue-500" ># {{this.data.id}}</span></crud-model-title>
+            <crud-model-title>Создание FAQ</crud-model-title>
             <form>
                 <div class="flex">
                     <div class="w-1/2">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="flex mt-4">
                     <crud-button-cancel class="mr-4"></crud-button-cancel>
-                    <crud-button-save @click.native="update(form)" ></crud-button-save>
+                    <crud-button-save @click.native="store(form)" ></crud-button-save>
                 </div>
             </form>
         </div>
@@ -60,15 +60,13 @@
             CrudButtonCancel,
             CrudButtonSave
         },
-        mounted() {
-            console.log()
-            this.form = Object.assign({}, this.data);
-        },
         methods : {
-            update: function (data) {
-                data._method = 'PUT';
-                this.$inertia.post('/posts/' + data.id, data)
-            },
+            store: function (data) {
+                this.$inertia.post('/posts', data)
+                // this.reset();
+                // this.closeModal();
+                // this.editMode = false;
+            }
         }
     }
 </script>

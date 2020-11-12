@@ -15,7 +15,7 @@
                 </div>
                 <div class="flex items-center ml-auto">
                     <div class="hidden md:block md:flex md:justify-between md:bg-transparent">
-                        <profile-dropdown/>
+                        <crud-profile-dropdown/>
                     </div>
                 </div>
                 <transition
@@ -48,18 +48,18 @@
                         </div>
                     </div>
                     <div class="flex py-24 flex-col text-sm">
-                        <nav-link href="/posts" count="7 501" >Посты</nav-link>
-                        <nav-dropdown count="18 965" :items="dropdown_items">Победители</nav-dropdown>
-                        <nav-link href="/2" count="7 501" >Lorem.</nav-link>
-                        <nav-link href="/3" count="7 501" >Lorem ipsum dolor.</nav-link>
-                        <nav-link href="/4" >Lorem.</nav-link>
+                        <crud-nav-link href="/posts" count="7 501" >Посты</crud-nav-link>
+                        <crud-nav-dropdown count="18 965" :items="dropdown_items">Победители</crud-nav-dropdown>
+                        <crud-nav-link href="/2" count="7 501" >Lorem.</crud-nav-link>
+                        <crud-nav-link href="/3" count="7 501" >Lorem ipsum dolor.</crud-nav-link>
+                        <crud-nav-link href="/4" >Lorem.</crud-nav-link>
                     </div>
 
 
                     <div class="fixed bottom-0 p-16 pr-0 text-xs h-56 flex flex-col border-t border-gray-200 bord justify-between w-full">
-                        <simple-link href="/">Документы</simple-link>
-                        <simple-link href="/">Обратная связь</simple-link>
-                        <simple-link href="/">Обратная связь</simple-link>
+                        <crud-simple-link href="/">Документы</crud-simple-link>
+                        <crud-simple-link href="/">Обратная связь</crud-simple-link>
+                        <crud-simple-link href="/">Обратная связь</crud-simple-link>
                     </div>
                 </aside>
 
@@ -69,10 +69,10 @@
 </template>
 
 <script>
-import SimpleLink from '@/Crud/SimpleLink'
-import NavLink from '@/Crud/NavLink'
-import NavDropdown from '@/Crud/NavDropdown'
-import ProfileDropdown from '@/Crud/ProfileDropdown'
+import CrudSimpleLink from '@/Crud/SimpleLink'
+import CrudNavLink from '@/Crud/NavLink'
+import CrudNavDropdown from '@/Crud/NavDropdown'
+import CrudProfileDropdown from '@/Crud/ProfileDropdown'
 
 import moment from 'moment'
 
@@ -113,10 +113,10 @@ export default {
         });
     },
     components: {
-        SimpleLink,
-        NavLink,
-        NavDropdown,
-        ProfileDropdown
+        CrudSimpleLink,
+        CrudNavLink,
+        CrudNavDropdown,
+        CrudProfileDropdown
     },
 };
 </script>

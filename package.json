@@ -25,6 +25,7 @@
     "dependencies": {
         "@inertiajs/inertia": "^0.6.1",
         "@inertiajs/inertia-vue": "^0.4.1",
+        "@inertiajs/progress": "^0.2.2",
         "moment": "^2.29.1"
     }
 }
