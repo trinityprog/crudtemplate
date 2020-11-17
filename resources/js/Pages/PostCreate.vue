@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="flex mt-4">
-                    <crud-button-cancel class="mr-4"></crud-button-cancel>
+                    <crud-button-cancel class="mr-4"><inertia-link :href="'/posts'">Отменить</inertia-link></crud-button-cancel>
                     <crud-button-save @click.native="store(form)" ></crud-button-save>
                 </div>
             </form>
@@ -61,11 +61,8 @@
             CrudButtonSave
         },
         methods : {
-            store: function (data) {
+            store(data) {
                 this.$inertia.post('/posts', data)
-                // this.reset();
-                // this.closeModal();
-                // this.editMode = false;
             }
         }
     }

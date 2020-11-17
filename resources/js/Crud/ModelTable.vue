@@ -17,8 +17,8 @@
                     <crud-table-button-delete v-if="can_delete" @click.native="deleteModalOpen($event)"/>
                 </div>
             </div>
-            <crud-modal-delete v-show="deleteOpen" :style="{ top : top_position + 'px'}" :modal_name="modal_name" :id="item_id"/>
-            <div class="overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25" v-if="deleteOpen" @click="deleteModalClose()"></div>
+            <crud-modal-delete v-show="$parent.deleteOpen" :style="{ top : top_position + 'px'}" :id="deleteItemid"/>
+            <div class="overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25" v-if="$parent.deleteOpen" @click="deleteModalClose()"></div>
         </div>
 </template>
 
@@ -34,29 +34,20 @@ export default {
     },
     data() {
         return {
-            deleteOpen : false,
-            modal_name: 'Код',
-            item_id: null,
-            delete_modal_top: 0,
-            top_position : 0
+            top_position : 0,
+            deleteItemid : 0
         }
     },
     methods: {
+        deleteModalClose() {
+            this.$parent.deleteOpen = false;
+        },
         deleteModalOpen(event) {
             let row = event.target.closest('.row');
             let rect = row.getBoundingClientRect();
-            this.deleteOpen = true;
+            this.$parent.deleteOpen = true;
             this.top_position = rect.height + rect.top;
-            console.log(this.top_position)
-            this.item_id = row.dataset.itemId;
-        },
-        deleteModalClose() {
-            this.deleteOpen = false;
-        },
-        delete(data) {
-            data._method = 'DELETE';
-            this.$inertia.post('/posts/' + data.id, data)
-            this.deleteModalClose();
+            this.deleteItemid = row.dataset.itemId;
         }
     },
     components: {
@@ -66,7 +57,7 @@ export default {
     },
     mounted() {
         document.addEventListener("keydown", e => {
-            if (e.keyCode == 27 && this.deleteOpen) this.deleteOpen = false;
+            if (e.keyCode == 27 && this.$parent.deleteOpen) this.$parent.deleteOpen = false;
         });
     }
 }

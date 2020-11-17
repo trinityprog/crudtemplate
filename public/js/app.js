@@ -3068,11 +3068,6 @@ __webpack_require__.r(__webpack_exports__);
     return {
       search: ''
     };
-  },
-  methods: {
-    searchRequest: function searchRequest() {
-      this.$inertia.post('/posts/?search=' + this.search);
-    }
   }
 });
 
@@ -3182,17 +3177,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['modal_name', 'id'],
-  methods: {
-    deleteModalClose: function deleteModalClose() {
-      this.$parent.deleteModalClose();
-    },
-    deleteItem: function deleteItem() {
-      this.$parent["delete"]({
-        id: this.id
-      });
-    }
-  },
+  props: ['id'],
   components: {
     CrudButtonCancel: _Crud_ButtonCancel__WEBPACK_IMPORTED_MODULE_0__["default"],
     CrudButtonDelete: _Crud_ButtonDelete__WEBPACK_IMPORTED_MODULE_1__["default"]
@@ -3287,29 +3272,20 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      deleteOpen: false,
-      modal_name: 'Код',
-      item_id: null,
-      delete_modal_top: 0,
-      top_position: 0
+      top_position: 0,
+      deleteItemid: 0
     };
   },
   methods: {
+    deleteModalClose: function deleteModalClose() {
+      this.$parent.deleteOpen = false;
+    },
     deleteModalOpen: function deleteModalOpen(event) {
       var row = event.target.closest('.row');
       var rect = row.getBoundingClientRect();
-      this.deleteOpen = true;
+      this.$parent.deleteOpen = true;
       this.top_position = rect.height + rect.top;
-      console.log(this.top_position);
-      this.item_id = row.dataset.itemId;
-    },
-    deleteModalClose: function deleteModalClose() {
-      this.deleteOpen = false;
-    },
-    "delete": function _delete(data) {
-      data._method = 'DELETE';
-      this.$inertia.post('/posts/' + data.id, data);
-      this.deleteModalClose();
+      this.deleteItemid = row.dataset.itemId;
     }
   },
   components: {
@@ -3321,7 +3297,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     document.addEventListener("keydown", function (e) {
-      if (e.keyCode == 27 && _this.deleteOpen) _this.deleteOpen = false;
+      if (e.keyCode == 27 && _this.$parent.deleteOpen) _this.$parent.deleteOpen = false;
     });
   }
 });
@@ -3737,7 +3713,8 @@ __webpack_require__.r(__webpack_exports__);
   props: ['data', 'message', 'flash'],
   data: function data() {
     return {
-      model_url: 'posts'
+      model_url: 'posts',
+      deleteOpen: false
     };
   },
   components: {
@@ -3746,6 +3723,17 @@ __webpack_require__.r(__webpack_exports__);
     CrudMessageAction: _Crud_MessageAction__WEBPACK_IMPORTED_MODULE_2__["default"],
     CrudModelActions: _Crud_ModelActions__WEBPACK_IMPORTED_MODULE_3__["default"],
     CrudModelTable: _Crud_ModelTable__WEBPACK_IMPORTED_MODULE_4__["default"]
+  },
+  methods: {
+    deleteItem: function deleteItem(id) {
+      this.$inertia.post(this.model_url + '/' + id, {
+        _method: 'DELETE'
+      });
+      this.deleteOpen = false;
+    },
+    searchRequest: function searchRequest(search) {
+      this.$inertia.post(this.model_url + '/?search=' + search);
+    }
   }
 });
 
@@ -3827,9 +3815,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     store: function store(data) {
-      this.$inertia.post('/posts', data); // this.reset();
-      // this.closeModal();
-      // this.editMode = false;
+      this.$inertia.post('/posts', data);
     }
   }
 });
@@ -3961,7 +3947,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".button-cancel{\n  height: 50px;\n}\n", ""]);
+exports.push([module.i, ".button-cancel *{\n  height: 50px;\n  line-height: 50px;\n  display: inline-block;\n  padding-left: 3rem;\n  padding-right: 3rem;\n}\n", ""]);
 
 // exports
 
@@ -44941,9 +44927,11 @@ var render = function() {
     "button",
     {
       staticClass:
-        "button-cancel rounded px-12 cursor-pointer text-gray-500 bg-white hover:text-gray-900"
+        "button-cancel rounded cursor-pointer text-gray-500 bg-white hover:text-gray-900",
+      attrs: { type: "button" }
     },
-    [_vm._v("\n    Отменить\n")]
+    [_vm._t("default")],
+    2
   )
 }
 var staticRenderFns = []
@@ -45128,7 +45116,7 @@ var render = function() {
             "rounded bg-blue-500 h-full absolute outline-none right-0",
           on: {
             click: function($event) {
-              return _vm.searchRequest()
+              return _vm.$parent.$parent.searchRequest(_vm.search)
             }
           }
         },
@@ -45293,7 +45281,7 @@ var render = function() {
     { staticClass: "modal-delete rounded fixed bg-white p-12 z-10" },
     [
       _c("div", { staticClass: "mb-4" }, [
-        _vm._v("Удалить " + _vm._s(_vm.modal_name) + " "),
+        _vm._v("Удалить "),
         _c("span", { staticClass: "text-blue-500" }, [
           _vm._v("#" + _vm._s(_vm.id))
         ]),
@@ -45304,19 +45292,23 @@ var render = function() {
         "div",
         { staticClass: "flex justify-between" },
         [
-          _c("crud-button-cancel", {
-            staticClass: "bg-gray-100",
-            nativeOn: {
-              click: function($event) {
-                return _vm.deleteModalClose()
+          _c(
+            "crud-button-cancel",
+            {
+              staticClass: "bg-gray-100",
+              nativeOn: {
+                click: function($event) {
+                  return _vm.$parent.deleteModalClose()
+                }
               }
-            }
-          }),
+            },
+            [_vm._v("Отменить")]
+          ),
           _vm._v(" "),
           _c("crud-button-delete", {
             nativeOn: {
               click: function($event) {
-                return _vm.deleteItem()
+                return _vm.$parent.$parent.deleteItem(_vm.id)
               }
             }
           })
@@ -45463,15 +45455,15 @@ var render = function() {
           {
             name: "show",
             rawName: "v-show",
-            value: _vm.deleteOpen,
-            expression: "deleteOpen"
+            value: _vm.$parent.deleteOpen,
+            expression: "$parent.deleteOpen"
           }
         ],
         style: { top: _vm.top_position + "px" },
-        attrs: { modal_name: _vm.modal_name, id: _vm.item_id }
+        attrs: { id: _vm.deleteItemid }
       }),
       _vm._v(" "),
-      _vm.deleteOpen
+      _vm.$parent.deleteOpen
         ? _c("div", {
             staticClass:
               "overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25",
@@ -46273,7 +46265,16 @@ var render = function() {
               "div",
               { staticClass: "flex mt-4" },
               [
-                _c("crud-button-cancel", { staticClass: "mr-4" }),
+                _c(
+                  "crud-button-cancel",
+                  { staticClass: "mr-4" },
+                  [
+                    _c("inertia-link", { attrs: { href: "/posts" } }, [
+                      _vm._v("Отменить")
+                    ])
+                  ],
+                  1
+                ),
                 _vm._v(" "),
                 _c("crud-button-save", {
                   nativeOn: {
@@ -46409,7 +46410,16 @@ var render = function() {
               "div",
               { staticClass: "flex mt-4" },
               [
-                _c("crud-button-cancel", { staticClass: "mr-4" }),
+                _c(
+                  "crud-button-cancel",
+                  { staticClass: "mr-4" },
+                  [
+                    _c("inertia-link", { attrs: { href: "/posts" } }, [
+                      _vm._v("Отменить")
+                    ])
+                  ],
+                  1
+                ),
                 _vm._v(" "),
                 _c("crud-button-save", {
                   nativeOn: {
@@ -60742,7 +60752,17 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__["InertiaApp"]);
-_inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__["InertiaProgress"].init();
+_inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__["InertiaProgress"].init({
+  // The delay after which the progress bar will
+  // appear during navigation, in milliseconds.
+  delay: 0,
+  // The color of the progress bar.
+  color: '#6B9EFF',
+  // Whether to include the default NProgress styles.
+  includeCSS: true,
+  // Whether the NProgress spinner will be shown.
+  showSpinner: true
+});
 var app = document.getElementById('app');
 new vue__WEBPACK_IMPORTED_MODULE_1___default.a({
   render: function render(h) {

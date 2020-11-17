@@ -25,7 +25,8 @@
         ],
         data() {
             return {
-                model_url : 'posts'
+                model_url : 'posts',
+                deleteOpen : false
             }
         },
         components: {
@@ -35,5 +36,16 @@
             CrudModelActions,
             CrudModelTable
         },
+        methods : {
+            deleteItem(id) {
+                this.$inertia.post(this.model_url + '/' + id, {
+                    _method : 'DELETE'
+                })
+                this.deleteOpen = false;
+            },
+            searchRequest(search) {
+                this.$inertia.post( this.model_url + '/?search=' + search)
+            }
+        }
     }
 </script>

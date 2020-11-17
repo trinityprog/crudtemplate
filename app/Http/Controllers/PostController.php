@@ -67,11 +67,9 @@ class PostController extends Controller
     }
 
 
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        if ($request->has('id')) {
-            Post::find($request->input('id'))->delete();
-            return redirect()->back()->with('message', 'Запись успешно удалена.');
-        }
+        Post::find($id)->delete();
+        return redirect()->back()->with('message', 'Запись успешно удалена.');
     }
 }

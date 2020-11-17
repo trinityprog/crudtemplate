@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white">
         <div class="crud-container">
-            <nav class="flex relative items-center justify-start  h-16 z-10">
+            <nav class="flex relative items-center justify-start  h-16 z-10" >
                 <div class="flex items-center">
                     <button aria-label="Open Menu" class="mr-2 p-1" @click="toggleNavbar">
                         <span class="icon burger"></span>

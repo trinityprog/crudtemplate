@@ -22,27 +22,16 @@
     <list default="true" id="a3ddf8e4-1367-409f-9eb3-70f0ccfb45b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/tailwind.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/tailwind.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonCancel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonCancel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Crud/InputFormGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Input.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Crud/TextareaFormGroup.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Textarea.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/PostCreate.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Test.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Test.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +174,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/Pages" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -226,7 +216,12 @@
       <workItem from="1605079732441" duration="16230000" />
       <workItem from="1605157227540" duration="5064000" />
       <workItem from="1605164134435" duration="6445000" />
-      <workItem from="1605179124781" duration="5099000" />
+      <workItem from="1605179124781" duration="5223000" />
+      <workItem from="1605240966045" duration="3600000" />
+      <workItem from="1605254325757" duration="616000" />
+      <workItem from="1605257266340" duration="9000" />
+      <workItem from="1605510069180" duration="892000" />
+      <workItem from="1605591836956" duration="8167000" />
     </task>
     <servers />
   </component>
@@ -257,22 +252,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="201" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605165258248" />
-    <state width="1867" height="185" key="GridCell.Tab.0.bottom" timestamp="1605172366958">
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom" timestamp="1605595017294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
-    <state width="1867" height="185" key="GridCell.Tab.0.center" timestamp="1605172366958">
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center" timestamp="1605595017294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
-    <state width="1867" height="185" key="GridCell.Tab.0.left" timestamp="1605172366958">
+    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
+    <state width="1867" height="185" key="GridCell.Tab.0.left" timestamp="1605595017294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
-    <state width="1867" height="185" key="GridCell.Tab.0.right" timestamp="1605172366958">
+    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right" timestamp="1605595017294">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605172366958" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
     <state x="381" y="78" key="SettingsEditor" timestamp="1605165259764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
