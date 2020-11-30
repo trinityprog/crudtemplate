@@ -1,0 +1,82 @@
+.modal-delete{
+    width: 420px;
+    right: 2.5%;
+}
+.modal-delete:after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 30px;
+    border-width: 0 15px 15px 15px;
+    border-color: transparent transparent white transparent;
+}
+.form-search{
+    height: 50px;
+    width: 250px;
+}
+.form-search input{
+    width: 200px;
+    height: auto;
+}
+.form-search input::placeholder{
+    color: #bababa;
+    font-weight: 100;
+}
+.form-search button{
+    width: 50px;
+}
+.table-button-edit .icon{
+    background-color: #6B9EFF;
+}
+.table-button-edit:hover .icon{
+    background-color: #fff;
+}
+.table-button-delete .icon{
+    background-color: #989898;
+}
+.table-button-delete:hover .icon{
+    background-color: #fff;
+}
+.profile-dropdown{
+    width: 334px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+    padding: 8px 0 30px;
+}
+.model-title span{
+     top: -0.7rem;
+     left: -0.3rem;
+}
+
+.model-table .row .text{
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.button-delete .icon{
+    background-color: white;
+}
+
+
+.date-range{
+    .mx-datepicker, .mx-input-wrapper, input{
+        width: 250px;
+        height: 100%;
+    }
+    input{
+        height: 100%;
+
+        padding-left: 1.25rem;
+
+        border : unset;
+        box-shadow: unset;
+        background-color: #F6F6F6;
+
+        &::placeholder{
+            color: #bababa;
+            font-weight: 100;
+        }
+    }
+}

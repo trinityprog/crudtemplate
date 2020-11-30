@@ -1,5 +1,5 @@
 <template>
-    <div class="text-xl text-black mt-12 mb-6" >
+    <div class="model-title text-xl text-black mt-12 mb-6" >
         <slot></slot>
         <span class="text-xs text-blue-500 relative font-bold" :if="count">{{ count }}</span>
     </div>
@@ -12,9 +12,3 @@ export default {
     ]
 }
 </script>
-<style>
-    span{
-        top: -0.7rem;
-        left: -0.3rem;
-    }
-</style>

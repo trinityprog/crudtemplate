@@ -3,7 +3,7 @@
         <crud-navbar/>
         <div class="crud-container">
             <crud-model-title count="1239">Коды</crud-model-title>
-            <crud-model-actions can_search can_create ></crud-model-actions>
+            <crud-model-actions can_search can_date_range can_create ></crud-model-actions>
             <crud-message-action v-if="flash.message" >{{ flash.message }}</crud-message-action>
             <crud-model-table :data="data" can_edit can_delete />
         </div>

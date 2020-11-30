@@ -22,16 +22,42 @@
     <list default="true" id="a3ddf8e4-1367-409f-9eb3-70f0ccfb45b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/theme.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonCancel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonCancel.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonDelete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonDelete.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ButtonSave.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ButtonSave.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/FormSearch.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Input.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/MessageAction.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/MessageAction.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModalDelete.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelActions.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelTable.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ModelTitle.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ModelTitle.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/PostCreate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/ProfileDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/ProfileDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/TableButtonDelete.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/TableButtonDelete.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/TableButtonEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/TableButtonEdit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Crud/Textarea.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Crud/Textarea.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Dashboard.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Post.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post/create.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/PostEdit.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Post/edit.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Test.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/crud/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,6 +209,11 @@
       <recent name="C:\wamp64\www\crudtemplate" />
       <recent name="C:\wamp64\www\crudtemplate\public\i\icons" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\crudtemplate\resources\views\crud" />
+      <recent name="C:\wamp64\www\crudtemplate\resources\js\Pages\Post" />
+      <recent name="C:\wamp64\www\crudtemplate\resources\js\Pages" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.watch">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -221,7 +252,12 @@
       <workItem from="1605254325757" duration="616000" />
       <workItem from="1605257266340" duration="9000" />
       <workItem from="1605510069180" duration="892000" />
-      <workItem from="1605591836956" duration="8167000" />
+      <workItem from="1605591836956" duration="8312000" />
+      <workItem from="1605767603311" duration="33000" />
+      <workItem from="1605856085488" duration="447000" />
+      <workItem from="1605864012312" duration="237000" />
+      <workItem from="1606718855019" duration="9951000" />
+      <workItem from="1606735271580" duration="4121000" />
     </task>
     <servers />
   </component>
@@ -252,37 +288,45 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="677" y="201" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605165258248" />
-    <state width="1867" height="185" key="GridCell.Tab.0.bottom" timestamp="1605595017294">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom" timestamp="1606735021548">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
-    <state width="1867" height="185" key="GridCell.Tab.0.center" timestamp="1605595017294">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606729115505" />
+    <state width="1867" height="185" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1606735021548" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center" timestamp="1606735021548">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
-    <state width="1867" height="185" key="GridCell.Tab.0.left" timestamp="1605595017294">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606729115505" />
+    <state width="1867" height="185" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1606735021548" />
+    <state width="1867" height="185" key="GridCell.Tab.0.left" timestamp="1606735021548">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
-    <state width="1867" height="185" key="GridCell.Tab.0.right" timestamp="1605595017294">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606729115505" />
+    <state width="1867" height="185" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1606735021548" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right" timestamp="1606735021548">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605595017294" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606729115505" />
+    <state width="1867" height="185" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@1920.0.1920.1040" timestamp="1606735021548" />
     <state x="381" y="78" key="SettingsEditor" timestamp="1605165259764">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="381" y="78" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605165259764" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605089079934">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606737337852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605089079934" />
-    <state x="581" y="195" width="906" height="822" key="find.popup" timestamp="1605170307413">
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606737337852" />
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1606724346973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="581" y="195" width="906" height="822" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605170307413" />
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1605169689823">
+    <state x="92" y="92" width="1736" height="856" key="dock-window-1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606724346973" />
+    <state x="581" y="195" width="906" height="822" key="find.popup" timestamp="1606740662178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1605169689823" />
+    <state x="581" y="195" width="906" height="822" key="find.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606740662178" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1606740641620">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1606740641620" />
   </component>
 </project>

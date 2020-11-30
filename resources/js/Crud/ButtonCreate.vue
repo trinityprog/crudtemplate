@@ -1,8 +1,8 @@
 <template>
     <div>
-        <inertia-link :href="this.href" class="button-create cursor-pointer px-8 rounded flex items-center justify-center text-white bg-green-500">
+        <inertia-link :href="this.href" class="button-create cursor-pointer px-8 rounded flex items-center justify-center text-white bg-green-500 h-full">
             Добавить
-            <div class="icon plus"></div>
+            <div class="icon plus ml-4"></div>
         </inertia-link>
     </div>
 </template>
@@ -16,11 +16,3 @@ export default {
     }
 }
 </script>
-<style>
-    .button-create{
-        height: 50px;
-    }
-    .button-create .icon{
-        margin-left: 1.6rem;
-    }
-</style>

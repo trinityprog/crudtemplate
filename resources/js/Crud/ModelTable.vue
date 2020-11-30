@@ -1,8 +1,8 @@
 <template>
         <div class="model-table">
-            <div v-for="row in data" :data-item-id="row.id" class="row rounded relative mb-4 pr-4 bg-white flex justify-between">
+            <div v-for="row in data" :data-item-id="row.id" class="row h-20 rounded relative mb-4 pr-4 bg-white flex justify-between">
                 <div class="right-side flex items-center">
-                    <div class="index border-r text-blue-500 border-gray-200 h-full text-center flex items-center justify-center">
+                    <div class="index border-r w-20 text-blue-500 border-gray-200 h-full text-center flex items-center justify-center">
                         {{ row.id }}
                     </div>
                     <div class="text ml-8" >
@@ -18,7 +18,7 @@
                 </div>
             </div>
             <crud-modal-delete v-show="$parent.deleteOpen" :style="{ top : top_position + 'px'}" :id="deleteItemid"/>
-            <div class="overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25" v-if="$parent.deleteOpen" @click="deleteModalClose()"></div>
+            <div class="overlay fixed w-screen h-screen bg-black top-0 left-0 opacity-25 z-20" v-if="$parent.deleteOpen" @click="deleteModalClose()"></div>
         </div>
 </template>
 
@@ -63,20 +63,4 @@ export default {
 }
 
 </script>
-<style>
-    .model-table .row{
-        height: 94px;
-    }
-    .model-table .row .index{
-        width: 94px;
-    }
-    .model-table .row .text{
-        max-width: 400px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2; /* number of lines to show */
-        -webkit-box-orient: vertical;
-    }
-</style>
 

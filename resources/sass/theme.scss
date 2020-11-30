@@ -1,3 +1,6 @@
+@import "components";
+@import '~vue2-datepicker/scss/index';
+
 html{
     line-height: 1.2;
 }
@@ -20,41 +23,38 @@ body{
         width: $width;
         height: $width;
         mask: url(../i/icons/profile.svg) center/contain no-repeat;
-        background: #6B9EFF;
+        background-color: #6B9EFF;
     }
     &.search{
         $width: 17px;
         width: $width;
         height: $width;
         mask: url(../i/icons/search.svg) center/contain no-repeat;
-        background: #fff;
+        background-color: #fff;
     }
     &.plus{
         $width: 12px;
         width: $width;
         height: $width;
         mask: url(../i/icons/plus.svg) center/contain no-repeat;
-        background: #fff;
+        background-color: #fff;
     }
     &.edit{
         $width: 18px;
         width: $width;
         height: $width;
         mask: url(../i/icons/edit.svg) center/contain no-repeat;
-        background: #fff;
     }
     &.delete{
         $width: 18px;
         width: $width;
         height: $width * 1.2;
         mask: url(../i/icons/delete.svg) center/contain no-repeat;
-        background: #fff;
     }
     &.check{
         $width: 19px;
         width: $width;
         height: $width * 0.75;
         mask: url(../i/icons/check.svg) center/contain no-repeat;
-        background: #fff;
     }
 }

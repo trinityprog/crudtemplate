@@ -2,7 +2,7 @@
     <div class="form-search rounded bg-gray-100 flex items-center relative">
         <input class="px-5 py-1 font-light bg-gray-100 outline-none" type="text" placeholder="Поиск" v-model="search">
         <button class="rounded bg-blue-500 h-full absolute outline-none right-0" @click="$parent.$parent.searchRequest(search)" >
-            <span class="icon search"></span>
+            <span class="icon search mx-auto"></span>
         </button>
     </div>
 </template>
@@ -16,23 +16,3 @@ export default {
     }
 }
 </script>
-<style>
-    .form-search{
-        height: 50px;
-        width: 310px;
-    }
-    .form-search input{
-        width: 260px;
-        height: auto;
-    }
-    .form-search input::placeholder{
-        color: #bababa;
-        font-weight: 100;
-    }
-    .form-search button{
-        width: 50px;
-    }
-    .form-search .icon{
-        margin: 0 auto;
-    }
-</style>

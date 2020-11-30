@@ -74,7 +74,7 @@ import CrudNavLink from '@/Crud/NavLink'
 import CrudNavDropdown from '@/Crud/NavDropdown'
 import CrudProfileDropdown from '@/Crud/ProfileDropdown'
 
-import moment from 'moment'
+import moment from 'moment';
 
 export default {
     data() {

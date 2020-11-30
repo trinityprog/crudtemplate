@@ -15,20 +15,21 @@ class PostController extends Controller
         $query = Post::query();
 
         $search = $request->input('search');
+
         if(!empty($search)) {
             $query->where('title', 'LIKE', "%$search%");
             $query->orWhere('body', 'LIKE', "%$search%");
         }
-//        dd($query->toSql());
+
         $data= $query->latest()->get();
 
-        return Inertia::render('Post', ['data' => $data]);
+        return Inertia::render('Post/index', ['data' => $data]);
     }
 
 
     public function create()
     {
-        return Inertia::render('PostCreate');
+        return Inertia::render('Post/create');
     }
 
     public function store(Request $request)
@@ -40,7 +41,7 @@ class PostController extends Controller
 
         Post::create($request->all());
 
-        return redirect('/posts/')
+        return redirect('/posts')
             ->with('message', 'Post Created Successfully.');
     }
 
@@ -48,7 +49,7 @@ class PostController extends Controller
     public function edit($id)
     {
         $data = Post::find($id);
-        return Inertia::render('PostEdit', ['data' => $data]);
+        return Inertia::render('Post/edit', ['data' => $data]);
     }
 
     public function update(Request $request)
@@ -60,8 +61,6 @@ class PostController extends Controller
 
         if ($request->has('id')) {
             $post = Post::find($request->input('id'))->update($request->all());
-//            return redirect()->back()
-//                ->with('message', 'Post Updated Successfully.');
             return redirect('/posts')->with('message', 'Запись успешно изменена.');
         }
     }
