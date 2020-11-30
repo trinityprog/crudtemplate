@@ -1,5 +1,5 @@
 <template>
-        <div class="model-table">
+    <div class="model-table">
             <div v-for="row in data" :data-item-id="row.id" class="row h-20 rounded relative mb-4 pr-4 bg-white flex justify-between">
                 <div class="right-side flex items-center">
                     <div class="index border-r w-20 text-blue-500 border-gray-200 h-full text-center flex items-center justify-center">

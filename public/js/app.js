@@ -3344,7 +3344,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['count', 'items'],
   data: function data() {
@@ -3596,8 +3595,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -44803,20 +44800,26 @@ var render = function() {
                 },
                 [
                   _vm._v(
-                    "\n                " + _vm._s(row.id) + "\n            "
+                    "\n                    " +
+                      _vm._s(row.id) +
+                      "\n                "
                   )
                 ]
               ),
               _vm._v(" "),
               _c("div", { staticClass: "text ml-8" }, [
                 _vm._v(
-                  "\n                " + _vm._s(row.title) + "\n            "
+                  "\n                    " +
+                    _vm._s(row.title) +
+                    "\n                "
                 )
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "text ml-8" }, [
                 _vm._v(
-                  "\n                " + _vm._s(row.body) + "\n            "
+                  "\n                    " +
+                    _vm._s(row.body) +
+                    "\n                "
                 )
               ])
             ]),
@@ -45390,16 +45393,14 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "div",
-        {
-          staticClass:
-            "table-button-delete h-12 w-12 cursor-pointer rounded text-white mx-1 bg-gray-100 flex items-center justify-center hover:bg-red-400 duration-300"
-        },
-        [_c("div", { staticClass: "icon delete duration-300" })]
-      )
-    ])
+    return _c(
+      "div",
+      {
+        staticClass:
+          "table-button-delete h-12 w-12 cursor-pointer rounded text-white mx-1 bg-gray-100 flex items-center justify-center hover:bg-red-400 duration-300"
+      },
+      [_c("div", { staticClass: "icon delete duration-300" })]
+    )
   }
 ]
 render._withStripped = true
@@ -45424,19 +45425,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "div",
-    [
-      _c(
-        "inertia-link",
-        {
-          staticClass:
-            "table-button-edit h-12 w-12 cursor-pointer rounded text-white mx-1 bg-gray-100 flex items-center justify-center hover:bg-blue-400 duration-300",
-          attrs: { href: _vm.href }
-        },
-        [_c("div", { staticClass: "icon edit duration-300" })]
-      )
-    ],
-    1
+    "inertia-link",
+    {
+      staticClass:
+        "table-button-edit h-12 w-12 cursor-pointer rounded text-white mx-1 bg-gray-100 flex items-center justify-center hover:bg-blue-400 duration-300",
+      attrs: { href: _vm.href }
+    },
+    [_c("div", { staticClass: "icon edit duration-300" })]
   )
 }
 var staticRenderFns = []
