@@ -32,20 +32,24 @@
                 fields : {
                     id : {
                         head_name : "#ID",
-                        column_class : "text-center"
+                        column_class : "text-center",
+                        column_style : "width: 5rem;"
                     },
                     title : {
                         head_name : "Заголовок",
-                        column_class : "ml-8 w-20"
+                        column_class : "ml-8",
+                        column_style : "width: 13rem;"
                     },
                     body : {
                         head_name : "Текст",
-                        column_class : "ml-8"
+                        column_class : "ml-8",
+                        column_style : "width: 20rem;"
                     },
                     created_at_format : {
                         head_name : "Дата создания",
-                        column_class : "ml-8"
-                    },
+                        column_class : "ml-8",
+                        column_style : "width: 8rem;"
+                    }
                 }
             }
         },
@@ -57,13 +61,13 @@
             CrudModelTableHead,
             CrudModelTable
         },
-        methods : {
-            deleteItem(id) {
+        mounted () {
+            this.$root.$on('deleteItem', (id) => {
                 this.$inertia.post(this.model_url + '/' + id, {
                     _method : 'DELETE'
                 })
                 this.deleteOpen = false;
-            }
+            })
         }
     }
 </script>

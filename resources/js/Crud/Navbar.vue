@@ -80,7 +80,7 @@ export default {
     data() {
         return {
             isOpen: false,
-            timestamp: moment().format('D MMM hh:mm:ss'),
+            timestamp: moment().format('DD.MM.YYYY hh:mm:ss'),
             dropdown_items : [
                 {name : 'Lorem', count : '5 590', href : '/'},
                 {name : 'Lorem2', count : '25 590', href : '3'}
@@ -92,7 +92,7 @@ export default {
             this.isOpen = !this.isOpen;
         },
         getNow: function() {
-            this.timestamp = moment().format('DD MMM hh:mm:ss');
+            this.timestamp = moment().format('DD.MM.YYYY hh:mm:ss');
         }
     },
     watch: {

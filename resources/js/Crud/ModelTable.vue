@@ -2,16 +2,16 @@
     <div class="model-table">
             <div v-for="(row, index) in data" :data-item-id="row.id" class="row h-20 rounded-lg relative mb-4 pr-4 bg-white flex justify-between">
                 <div class="right-side flex items-center">
-                    <div class="index border-r text-blue-500 border-gray-200 h-full flex items-center justify-center" :class="fields[index].column_class">
+                    <div class="index border-r text-blue-500 border-gray-200 h-full flex items-center justify-center" :class="fields.id.column_class" :style="fields.id.column_style">
                         {{ row.id }}
                     </div>
-                    <div class="text"  :class="fields[index].column_class">
+                    <div class="text"  :class="fields.title.column_class" :style="fields.title.column_style">
                         {{ row.title}}
                     </div>
-                    <div class="text"  :class="fields[index].column_class">
+                    <div class="text"  :class="fields.body.column_class" :style="fields.body.column_style">
                         {{ row.body}}
                     </div>
-                    <div class="text"  :class="fields[index].column_class">
+                    <div class="text"  :class="fields.created_at_format.column_class" :style="fields.created_at_format.column_style">
                         {{ row.created_at_format }}
                     </div>
                 </div>
@@ -34,7 +34,7 @@ export default {
         'data' : Array,
         'can_edit' : Boolean,
         'can_delete' : Boolean,
-        fields : Array
+        'fields' : Object
     },
     data() {
         return {
