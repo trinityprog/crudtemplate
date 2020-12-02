@@ -16,29 +16,28 @@
   height: 50px;
   width: 250px;
 }
-
 .form-search input {
   width: 200px;
   height: auto;
 }
-
 .form-search input::-moz-placeholder {
   color: #bababa;
   font-weight: 100;
 }
-
 .form-search input:-ms-input-placeholder {
   color: #bababa;
   font-weight: 100;
 }
-
 .form-search input::placeholder {
   color: #bababa;
   font-weight: 100;
 }
-
 .form-search button {
   width: 50px;
+}
+
+.label-top {
+  bottom: 100%;
 }
 
 .table-button-edit .icon {
@@ -104,6 +103,10 @@
 .date-range input::placeholder {
   color: #bababa;
   font-weight: 100;
+}
+.date-range .mx-icon-calendar, .date-range .mx-icon-clear {
+  right: 17px;
+  cursor: pointer;
 }
 
 .mx-icon-left:before,
@@ -580,6 +583,10 @@ html {
 
 body {
   background: #F6F6F6;
+}
+
+* {
+  outline: none !important;
 }
 
 .crud-container {

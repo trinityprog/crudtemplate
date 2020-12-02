@@ -1,8 +1,8 @@
 <template>
-    <div class="flex justify-between mb-16 p-8 bg-white rounded">
+    <div class="flex justify-between p-8 bg-white rounded-lg rounded-b-none border-b">
         <div class="left-side flex justify-start">
-            <crud-form-search v-if="can_search" />
-            <crud-date-range v-if="can_date_range" />
+            <crud-date-range class="mr-2" v-if="can_date_range" v-model="date_range" />
+            <crud-form-search v-if="can_search" v-model="search" />
         </div>
         <div class="right-side flex justify-end">
             <crud-button-create v-if="can_create" />
@@ -19,6 +19,17 @@ export default {
         'can_search' : Boolean,
         'can_date_range' : Boolean,
         'can_create' : Boolean
+    },
+    data() {
+      return {
+          search : '',
+          date_range : [],
+      }
+    },
+    methods : {
+        searchRequest() {
+            this.$inertia.post( this.$parent.model_url + '/?search=' + this.search + '&date_range=' + this.date_range);
+        }
     },
     components: {
         CrudFormSearch,

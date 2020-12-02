@@ -74,7 +74,7 @@ import CrudNavLink from '@/Crud/NavLink'
 import CrudNavDropdown from '@/Crud/NavDropdown'
 import CrudProfileDropdown from '@/Crud/ProfileDropdown'
 
-import moment from 'moment';
+
 
 export default {
     data() {
@@ -92,7 +92,7 @@ export default {
             this.isOpen = !this.isOpen;
         },
         getNow: function() {
-            this.timestamp = moment().format('D MMM hh:mm:ss');
+            this.timestamp = moment().format('DD MMM hh:mm:ss');
         }
     },
     watch: {

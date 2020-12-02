@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use App\Models\Post;
@@ -14,16 +15,21 @@ class PostController extends Controller
     {
         $query = Post::query();
 
-        $search = $request->input('search');
-
-        if(!empty($search)) {
+        if(!empty($request->input('search'))) {
+            $search = $request->input('search');
             $query->where('title', 'LIKE', "%$search%");
             $query->orWhere('body', 'LIKE', "%$search%");
         }
 
-        $data= $query->latest()->get();
+        if(!empty($request->input('date_range')) && $request->input('date_range') !== ",") {
+            $date_range = explode(',', request()->input('date_range'));
+            $query->whereBetween('created_at', [$date_range[0].' 00:00', $date_range[1]. ' 23:59']);
+        }
 
+        $data= $query->latest()->get();
         return Inertia::render('Post/index', ['data' => $data]);
+
+
     }
 
 

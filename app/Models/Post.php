@@ -12,4 +12,10 @@ class Post extends Model
     protected $fillable = [
         'title', 'body'
     ];
+
+    protected $appends = ['created_at_format'];
+
+    public function getCreatedAtFormatAttribute(){
+        return $this->created_at->format('d.m.Y');
+    }
 }

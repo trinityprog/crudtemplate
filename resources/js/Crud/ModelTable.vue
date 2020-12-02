@@ -1,15 +1,18 @@
 <template>
     <div class="model-table">
-            <div v-for="row in data" :data-item-id="row.id" class="row h-20 rounded relative mb-4 pr-4 bg-white flex justify-between">
+            <div v-for="(row, index) in data" :data-item-id="row.id" class="row h-20 rounded-lg relative mb-4 pr-4 bg-white flex justify-between">
                 <div class="right-side flex items-center">
-                    <div class="index border-r w-20 text-blue-500 border-gray-200 h-full text-center flex items-center justify-center">
+                    <div class="index border-r text-blue-500 border-gray-200 h-full flex items-center justify-center" :class="fields[index].column_class">
                         {{ row.id }}
                     </div>
-                    <div class="text ml-8" >
+                    <div class="text"  :class="fields[index].column_class">
                         {{ row.title}}
                     </div>
-                    <div class="text ml-8" >
+                    <div class="text"  :class="fields[index].column_class">
                         {{ row.body}}
+                    </div>
+                    <div class="text"  :class="fields[index].column_class">
+                        {{ row.created_at_format }}
                     </div>
                 </div>
                 <div class="left-side flex items-center justify-end">
@@ -30,7 +33,8 @@ export default {
     props : {
         'data' : Array,
         'can_edit' : Boolean,
-        'can_delete' : Boolean
+        'can_delete' : Boolean,
+        fields : Array
     },
     data() {
         return {

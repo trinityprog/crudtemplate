@@ -13,17 +13,20 @@
 .form-search{
     height: 50px;
     width: 250px;
+    input{
+        width: 200px;
+        height: auto;
+        &::placeholder{
+            color: #bababa;
+            font-weight: 100;
+        }
+    }
+    button{
+        width: 50px;
+    }
 }
-.form-search input{
-    width: 200px;
-    height: auto;
-}
-.form-search input::placeholder{
-    color: #bababa;
-    font-weight: 100;
-}
-.form-search button{
-    width: 50px;
+.label-top{
+    bottom: 100%;
 }
 .table-button-edit .icon{
     background-color: #6B9EFF;
@@ -78,5 +81,9 @@
             color: #bababa;
             font-weight: 100;
         }
+    }
+    .mx-icon-calendar, .mx-icon-clear{
+        right: 17px;
+        cursor: pointer;
     }
 }

@@ -4,8 +4,9 @@
         <div class="crud-container">
             <crud-model-title count="1239">Коды</crud-model-title>
             <crud-model-actions can_search can_date_range can_create ></crud-model-actions>
+            <crud-model-table-head :fields="fields" />
             <crud-message-action v-if="flash.message" >{{ flash.message }}</crud-message-action>
-            <crud-model-table :data="data" can_edit can_delete />
+            <crud-model-table :data="data" :fields="fields" can_edit can_delete />
         </div>
     </div>
 </template>
@@ -15,6 +16,7 @@
     import CrudModelTitle from '@/Crud/ModelTitle'
     import CrudMessageAction from '@/Crud/MessageAction'
     import CrudModelActions from '@/Crud/ModelActions'
+    import CrudModelTableHead from '@/Crud/ModelTableHead'
     import CrudModelTable from '@/Crud/ModelTable'
 
     export default {
@@ -26,7 +28,25 @@
         data() {
             return {
                 model_url : 'posts',
-                deleteOpen : false
+                deleteOpen : false,
+                fields : {
+                    id : {
+                        head_name : "#ID",
+                        column_class : "text-center"
+                    },
+                    title : {
+                        head_name : "Заголовок",
+                        column_class : "ml-8 w-20"
+                    },
+                    body : {
+                        head_name : "Текст",
+                        column_class : "ml-8"
+                    },
+                    created_at_format : {
+                        head_name : "Дата создания",
+                        column_class : "ml-8"
+                    },
+                }
             }
         },
         components: {
@@ -34,6 +54,7 @@
             CrudModelTitle,
             CrudMessageAction,
             CrudModelActions,
+            CrudModelTableHead,
             CrudModelTable
         },
         methods : {
@@ -42,9 +63,6 @@
                     _method : 'DELETE'
                 })
                 this.deleteOpen = false;
-            },
-            searchRequest(search) {
-                this.$inertia.post( this.model_url + '/?search=' + search)
             }
         }
     }
