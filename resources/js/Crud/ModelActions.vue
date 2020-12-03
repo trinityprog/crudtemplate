@@ -1,7 +1,7 @@
 <template>
     <div class="flex justify-between p-8 bg-white rounded-lg rounded-b-none border-b border-gray-200">
         <div class="left-side flex justify-start">
-            <crud-date-range class="mr-2" v-if="can_date_range" v-model="date_range" />
+            <crud-date-range class="mr-4" v-if="can_date_range" v-model="date_range" />
             <crud-form-search v-if="can_search" v-model="search" />
         </div>
         <div class="right-side flex justify-end">

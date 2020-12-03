@@ -414,7 +414,7 @@ ul {
  */
 
 html {
-  font-family: Geometria; /* 1 */
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; /* 1 */
   line-height: 1.5; /* 2 */
 }
 
@@ -550,7 +550,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Geometria;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 /**
@@ -584,37 +584,6 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-@font-face {
-  font-family: Geometria;
-
-  src: url('../font/Geometria-Medium.woff2') format('woff2'),
-        url('../font/Geometria-Medium.woff') format('woff');
-
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: Geometria;
-
-  src: url('../font/Geometria-Bold.woff2') format('woff2'),
-        url('../font/Geometria-Bold.woff') format('woff');
-
-  font-weight: 700;
-
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Geometria;
-
-  src: url('../font/Geometria-Heavy.woff2') format('woff2'),
-        url('../font/Geometria-Heavy.woff') format('woff');
-
-  font-weight: 900;
-
-  font-style: normal;
 }
 
 .container {
@@ -3809,23 +3778,23 @@ video {
 }
 
 .font-sans {
-  font-family: Geometria;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 
 .font-serif {
-  font-family: Geometria;
+  font-family: Georgia, Times New Roman, Times, serif;
 }
 
 .font-mono {
-  font-family: Geometria;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
 }
 
 .font-display {
-  font-family: Geometria;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 
 .font-body {
-  font-family: Geometria;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
 }
 
 .font-hairline {
@@ -14190,23 +14159,23 @@ video {
   }
 
   .sm\:font-sans {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .sm\:font-serif {
-    font-family: Geometria;
+    font-family: Georgia, Times New Roman, Times, serif;
   }
 
   .sm\:font-mono {
-    font-family: Geometria;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
   .sm\:font-display {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .sm\:font-body {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .sm\:font-hairline {
@@ -24506,23 +24475,23 @@ video {
   }
 
   .md\:font-sans {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .md\:font-serif {
-    font-family: Geometria;
+    font-family: Georgia, Times New Roman, Times, serif;
   }
 
   .md\:font-mono {
-    font-family: Geometria;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
   .md\:font-display {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .md\:font-body {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .md\:font-hairline {
@@ -34822,23 +34791,23 @@ video {
   }
 
   .lg\:font-sans {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .lg\:font-serif {
-    font-family: Geometria;
+    font-family: Georgia, Times New Roman, Times, serif;
   }
 
   .lg\:font-mono {
-    font-family: Geometria;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
   .lg\:font-display {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .lg\:font-body {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .lg\:font-hairline {
@@ -45138,23 +45107,23 @@ video {
   }
 
   .xl\:font-sans {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .xl\:font-serif {
-    font-family: Geometria;
+    font-family: Georgia, Times New Roman, Times, serif;
   }
 
   .xl\:font-mono {
-    font-family: Geometria;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   }
 
   .xl\:font-display {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .xl\:font-body {
-    font-family: Geometria;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
   }
 
   .xl\:font-hairline {

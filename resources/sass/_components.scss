@@ -18,7 +18,7 @@
         height: auto;
         &::placeholder{
             color: #bababa;
-            font-weight: 100;
+            font-weight: 500;
         }
     }
     button{
@@ -79,11 +79,76 @@
 
         &::placeholder{
             color: #bababa;
-            font-weight: 100;
+            font-weight: 500;
         }
     }
     .mx-icon-calendar, .mx-icon-clear{
         right: 17px;
         cursor: pointer;
+    }
+}
+.table-button-action:first-of-type{
+    margin-left: auto;
+}
+
+.pagination-arrow{
+    width: 26px;
+    height: 14px;
+
+    background: url(../i/icons/arrow-prev.svg) center/contain no-repeat;
+
+    &::after{
+        content: "";
+
+        width: 36px;
+        height: 36px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        border-radius: 50%;
+        background: transparent;
+    }
+    &:hover::after{
+        background: white;
+    }
+    &.next{
+        background: url(../i/icons/arrow-next.svg) center/contain no-repeat;
+    }
+}
+.pagination-link{
+    &::after{
+        content: "";
+
+        width: 36px;
+        height: 36px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+
+        border-radius: 50%;
+        background: transparent;
+    }
+    &:hover::after{
+        background: white;
+    }
+    &.text-hide{
+        width: 26px;
+        height: 14px;
+
+        background: url(../i/icons/arrow-prev.svg) center/contain no-repeat;
+
+        padding: 0!important;
+
+        color: transparent;
+    }
+    &.next{
+        background: url(../i/icons/arrow-next.svg) center/contain no-repeat;
     }
 }

@@ -26,12 +26,14 @@ class PostController extends Controller
             $query->whereBetween('created_at', [$date_range[0].' 00:00', $date_range[1]. ' 23:59']);
         }
 
-        $data= $query->latest()->get();
-        return Inertia::render('Post/index', ['data' => $data]);
+        $posts = $query
+                ->latest()
+                ->paginate(25)
+                ->appends(request()->only(['search', 'date_range']));
+        return Inertia::render('Post/index', compact('posts'));
 
 
     }
-
 
     public function create()
     {
@@ -51,7 +53,6 @@ class PostController extends Controller
             ->with('message', 'Post Created Successfully.');
     }
 
-
     public function edit($id)
     {
         $data = Post::find($id);
@@ -70,7 +71,6 @@ class PostController extends Controller
             return redirect('/posts')->with('message', 'Запись успешно изменена.');
         }
     }
-
 
     public function destroy($id)
     {

@@ -6,7 +6,8 @@
             <crud-model-actions can_search can_date_range can_create ></crud-model-actions>
             <crud-model-table-head :fields="fields" />
             <crud-message-action v-if="flash.message" >{{ flash.message }}</crud-message-action>
-            <crud-model-table :data="data" :fields="fields" can_edit can_delete />
+            <crud-model-table :data="posts.data" :fields="fields" can_edit can_delete />
+            <crud-pagination :links="posts.links" />
         </div>
     </div>
 </template>
@@ -18,10 +19,11 @@
     import CrudModelActions from '@/Crud/ModelActions'
     import CrudModelTableHead from '@/Crud/ModelTableHead'
     import CrudModelTable from '@/Crud/ModelTable'
+    import CrudPagination from '@/Crud/Pagination'
 
     export default {
         props : [
-            'data',
+            'posts',
             'message',
             'flash'
         ],
@@ -32,23 +34,19 @@
                 fields : {
                     id : {
                         head_name : "#ID",
-                        column_class : "text-center",
-                        column_style : "width: 5rem;"
+                        column_class : "index border-r text-blue-500 font-medium border-gray-200 h-full flex items-center justify-center text-center w-20"
                     },
                     title : {
                         head_name : "Заголовок",
-                        column_class : "ml-8",
-                        column_style : "width: 13rem;"
+                        column_class : "ml-8 w-3/12"
                     },
                     body : {
                         head_name : "Текст",
-                        column_class : "ml-8",
-                        column_style : "width: 20rem;"
+                        column_class : "ml-8 w-3/12"
                     },
                     created_at_format : {
                         head_name : "Дата создания",
-                        column_class : "ml-8",
-                        column_style : "width: 8rem;"
+                        column_class : "ml-8 w-2/12"
                     }
                 }
             }
@@ -59,7 +57,8 @@
             CrudMessageAction,
             CrudModelActions,
             CrudModelTableHead,
-            CrudModelTable
+            CrudModelTable,
+            CrudPagination
         },
         mounted () {
             this.$root.$on('deleteItem', (id) => {

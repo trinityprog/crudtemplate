@@ -9,7 +9,6 @@ import { InertiaProgress } from '@inertiajs/progress';
 window.moment = require('moment');
 window.moment.locale('ru');
 
-
 Vue.use(InertiaApp)
 InertiaProgress.init({
     delay: 0,

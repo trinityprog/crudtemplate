@@ -6,11 +6,11 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Geometria"],
-                serif: ["Geometria"],
-                mono: ["Geometria"],
-                display: ["Geometria"],
-                body: ["Geometria"]
+                sans: ["-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+                serif: ["Georgia", "Times New Roman", "Times", "serif"],
+                mono: ["Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", "monospace"],
+                display: ["-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"],
+                body: ["-apple-system", "system-ui", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
             },
         },
         colors : {
